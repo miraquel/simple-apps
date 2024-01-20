@@ -1,0 +1,12 @@
+services:
+  web-apps:
+    build: ./apps
+    container_name: web-apps
+    image: image-chaidir
+    ports:
+      - "5000:3000"
+    volumes:
+      - web-app-data:/app/publish/images
+
+volumes:
+  web-app-data:
