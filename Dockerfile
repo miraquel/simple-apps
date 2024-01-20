@@ -1,4 +1,4 @@
-FROM 18.19.0-buster
+FROM node:18.19.0-buster
 RUN apt-get update && apt-get install -y
 WORKDIR /app
 ADD . /app/
