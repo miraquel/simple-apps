@@ -28,7 +28,7 @@ pipeline {
                 sh '''
                 cd apps
                 npm test
-                npm test:coverage
+                npm run test:coverage
                 '''
             }
         }
