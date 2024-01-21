@@ -18,7 +18,7 @@ pipeline {
         stage('Copy env file') {
             steps {
                 sh '''
-                cp /root/simple-apps/.env apps/
+                sudo cp /root/simple-apps/.env apps/
                 '''
             }
         }
