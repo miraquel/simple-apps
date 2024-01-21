@@ -44,7 +44,10 @@ pipeline {
 
         stage('Dockerized') {
             steps {
-                echo "Dockerizing the apps..."
+                sh '''
+                cd apps
+                docker compose build
+                '''
             }
         }
 
